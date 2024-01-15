@@ -3,6 +3,4 @@
 
 // Test hkahdsfak
 
-phpinfo();
-
 ?>
