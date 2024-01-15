@@ -1,1 +1,8 @@
 
+<?php
+
+// Test hkahdsfak
+
+phpinfo();
+
+?>
