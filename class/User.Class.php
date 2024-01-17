@@ -1,6 +1,36 @@
+<?php 
+class User {
 
-<?php
+    public ID;
+    public name;
+    Public role;
+    public createdDateTime;
+    public lastLoginDateTime;
+    public badPasswords;
+    public lastPassword;
 
-// Test hkahdsfak
+    function resetPass(){
+
+
+    }
+
+    function changePass(){
+
+    }
+
+    function logOut(){
+        
+    }
+
+    
+
+
+
+
+}
+
+
+
+
 
 ?>
