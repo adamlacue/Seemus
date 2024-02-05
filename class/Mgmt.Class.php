@@ -13,8 +13,6 @@ Class MGMT {
     public signOut;
     
 
-    
-
     function addUser(){
 
     }
