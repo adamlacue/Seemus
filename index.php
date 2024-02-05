@@ -1,5 +1,6 @@
 <?php
+include "include/db.inc.php";
 
-phpinfo();
 
+include "include/dbclose.inc.php";
 ?>
