@@ -1,18 +1,10 @@
-HHELLO World
 
 <?php
 
-<<<<<<< HEAD
   $servername = "twyxt.io";
   $username = "shuser";
   $password = "shRocks!";
   $dbname = "seemus_adam";
-=======
-  $servername = "localhost";
-  $username = "shuser";
-  $password = "shRocks!";
-  $dbname = "Seemus";
->>>>>>> 96c6f21461efa5bdd2a166ba03ed34a03b157f74
   
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
