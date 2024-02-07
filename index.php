@@ -29,7 +29,7 @@ if(isset($_REQUEST["activity"])) {
                     ?>
                     <form action="index.php?activity=USER" method=get>
                         <input type="text" name="username" placeholder="Username / Email" />
-                        <input type="submit" value="Logon" />>
+                        <input type="submit" value="Logon" />
                     </form>
                     <?php
                 } else {
