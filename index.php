@@ -8,6 +8,7 @@
 // ini_set('display_startup_errors', 1);
 // error_reporting(E_ALL);
 
+echo "[". $_SESSION["username"] . "] is current user<br>";
 
 if(isset($_REQUEST["activity"])) {
     $activity = $_REQUEST["activity"];
@@ -35,6 +36,7 @@ if(isset($_REQUEST["activity"])) {
                     <?php
                 } else {
                     echo "<br>" . $_REQUEST["username"] . " is logged on!";
+                    $_SESSION["username"] = $_REQUEST["username"];
                 }
             break;
 
