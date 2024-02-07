@@ -9,7 +9,7 @@
 // error_reporting(E_ALL);
 
 
-if(isset($REQUEST["activity"])) {
+if(isset($_REQUEST["activity"])) {
     $activity = $_REQUEST["activity"]
 }
 
