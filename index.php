@@ -34,7 +34,7 @@ if(isset($_REQUEST["activity"])) {
                     </form>
                     <?php
                 } else {
-                    echo $_REQUEST["username"];
+                    echo "<br>" . $_REQUEST["username"] . " is logged on!";
                 }
             break;
 
