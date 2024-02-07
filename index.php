@@ -27,7 +27,8 @@ if(isset($_REQUEST["activity"])) {
                 // User Login
                 if(!isset($_REQUEST["username"])) {
                     ?>
-                    <form action="index.php?activity=USER" method=get>
+                    <form action="index.php" method=get>
+                        <input type="hidden" name="activity" value="USER" />
                         <input type="text" name="username" placeholder="Username / Email" />
                         <input type="submit" value="Logon" />
                     </form>
