@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 // include "include/db.inc.php";
 // include "class/Utils.class.php";
 
@@ -34,7 +36,6 @@ if(isset($_REQUEST["activity"])) {
                     <?php
                 } else {
                     echo "<br>" . $_REQUEST["username"] . " is logged on!";
-                    session_start();
                     $_SESSION["username"] = $_REQUEST["username"];
                 }
             break;
