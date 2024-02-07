@@ -8,8 +8,6 @@
 // ini_set('display_startup_errors', 1);
 // error_reporting(E_ALL);
 
-echo "[". $_SESSION["username"] . "] is current user<br>";
-
 if(isset($_REQUEST["activity"])) {
     $activity = $_REQUEST["activity"];
 }
@@ -85,4 +83,8 @@ if(isset($_REQUEST["activity"])) {
 
 <?php
 include "include/dbclose.inc.php";
+
+echo "[". $_SESSION["username"] . "] is current user<br>";
+
+
 ?>
