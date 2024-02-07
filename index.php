@@ -69,7 +69,7 @@ if(isset($_REQUEST["activity"])) {
                 //default viewing of content
                 ?>
 
-
+                I'm in default
 
                 <?php
             break;
