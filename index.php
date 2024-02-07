@@ -10,7 +10,7 @@
 
 
 if(isset($_REQUEST["activity"])) {
-    $activity = $_REQUEST["activity"]
+    $activity = $_REQUEST["activity"];
 }
 
 ?>
