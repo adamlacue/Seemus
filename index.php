@@ -70,7 +70,7 @@ if(isset($_REQUEST["activity"])) {
                 ?>
 
                 I'm in default
-
+ 
                 <?php
             break;
         }
