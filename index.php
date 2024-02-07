@@ -4,9 +4,9 @@ include "class/Utils.class.php";
 
 // Utils::prettyPrint("SELECT * FROM Seemus.tbTable;")
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 
 
 if(isset($REQUEST["activity"])) {
@@ -16,7 +16,7 @@ if(isset($REQUEST["activity"])) {
 ?>
 <html>
     <head>
-        <title></title>
+        <title>Boo</title>
     </head>
     <body>
         <a href="index.php?activity=USER">LOGON</a>
