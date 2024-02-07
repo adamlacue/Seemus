@@ -22,7 +22,7 @@ if(isset($_REQUEST["activity"])) {
         <title><?php echo $activity ?></title>
     </head>
     <body>
-        <a href="index.php?activity=USER">LOGON</a>
+        <a href="index.php?activity=USER">LOGON</a> | <a href="index.php?activity=LOGOUT">LOGOUT</a> | 
 
         <?php
         switch($activity) {
@@ -45,6 +45,11 @@ if(isset($_REQUEST["activity"])) {
             case "LOGOUT":
                 // User Logout
 
+                // remove all session variables
+                session_unset();
+
+                // destroy the session
+                session_destroy(); 
             break;
 
             case "VIEW":
@@ -73,7 +78,7 @@ if(isset($_REQUEST["activity"])) {
             default:
                 //default viewing of content
                 ?>
-
+                <BR>
                 I'm in default
  
                 <?php
@@ -87,7 +92,7 @@ if(isset($_REQUEST["activity"])) {
 <?php
 include "include/dbclose.inc.php";
 
-echo "[". $_SESSION["username"] . "] is current user<br>";
+echo "<BR><BR>[". $_SESSION["username"] . "] is current user<br>";
 
 
 ?>
