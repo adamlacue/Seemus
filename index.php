@@ -1,5 +1,5 @@
 <?php
-session_start();
+session_start(); //allow for session variables in the app.
 
 // include "include/db.inc.php";
 // include "class/Utils.class.php";
@@ -12,12 +12,14 @@ session_start();
 
 if(isset($_REQUEST["activity"])) {
     $activity = $_REQUEST["activity"];
+} else {
+    $activity = "DEFAULT";
 }
 
 ?>
 <html>
     <head>
-        <title>Boo</title>
+        <title><?php echo $activity ?></title>
     </head>
     <body>
         <a href="index.php?activity=USER">LOGON</a>
