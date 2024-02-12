@@ -33,6 +33,7 @@ if(isset($_REQUEST["activity"])) {
                     <form action="index.php" method=get>
                         <input type="hidden" name="activity" value="USER" />
                         <input type="text" name="username" placeholder="Username / Email" />
+                        <input type="text" name="password" placeholder="Password" />
                         <input type="submit" value="Logon" />
                     </form>
                     <?php
