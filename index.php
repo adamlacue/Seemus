@@ -1,7 +1,7 @@
 <?php
 session_start(); //allow for session variables in the app.
 
-// include "include/db.inc.php";
+// include "include/top.inc.php";
 // include "class/Utils.class.php";
 
 // Utils::prettyPrint("SELECT * FROM Seemus.tbTable;")
@@ -90,9 +90,8 @@ if(isset($_REQUEST["activity"])) {
 </html>
 
 <?php
-include "include/dbclose.inc.php";
+include "include/bottom.inc.php";
 
 echo "<BR><BR>[". $_SESSION["username"] . "] is current user<br>";
-
 
 ?>
