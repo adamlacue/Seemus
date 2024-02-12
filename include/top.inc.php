@@ -1,5 +1,12 @@
 <?php
 
+include "Content.Class.php";
+include "File.Class.php";
+include "Mgmt.Class.php";
+include "User.Class.php";
+include "Utils.Class.php";
+
+
   $servername = "twyxt.io";
   $username = "shuser";
   $password = "shRocks!";
