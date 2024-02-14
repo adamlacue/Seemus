@@ -1,4 +1,4 @@
-<?php
+boo<?php
 
 
 session_start(); //allow for session variables in the app.
