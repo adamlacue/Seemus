@@ -1,4 +1,6 @@
 <?php
+
+
 session_start(); //allow for session variables in the app.
 
 // include "include/top.inc.php";
