@@ -1,6 +1,4 @@
 <?php
-
-
 session_start(); //allow for session variables in the app.
 
 // include "include/top.inc.php";
@@ -39,9 +37,24 @@ if(isset($_REQUEST["activity"])) {
                         <input type="submit" value="Logon" />
                     </form>
                     <?php
-                } else {
-                    echo "<br>" . $_REQUEST["username"] . " is logged on!";
-                    $_SESSION["username"] = $_REQUEST["username"];
+                }  else {
+                    $username = $_REQUEST["username"];
+                    $password = $_REQUEST["password"];
+                    // Check credentials against database
+                    $stmt = $conn->prepare("SELECT * FROM tbUsers WHERE username = :username");
+                    $stmt->bindParam(':username', $username);
+                    $stmt->execute();
+                    $user = $stmt->fetch(PDO::FETCH_ASSOC);
+                    if ($user) {
+                        if (password_verify($password, $user['password'])) {
+                            echo "<br>" . $username . " is logged on!";
+                            $_SESSION["username"] = $username;
+                        } else {
+                            echo "<br>Invalid password";
+                        }
+                    } else {
+                        echo "<br>Invalid username";
+                    }
                 }
             break;
 
